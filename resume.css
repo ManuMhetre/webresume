@@ -1,0 +1,52 @@
+*{
+	box-sizing: border-box;
+}
+body {
+	font-family: "Times New Roman";
+	height: 100%;
+	width: 100%;
+}
+main{
+	display: flex;
+	flex-wrap: wrap;
+}
+header{
+	background-color: #32a4a8;
+	color: white;
+}
+table,th,td{
+  border: 2px solid black;
+  border-collapse:collapse;
+  padding: 5px;
+}
+body header p{
+	padding: 10px;
+	margin-top: -42px;
+	font-size: 20px;
+}
+
+#projects {
+	width:500px;
+	border-radius:20px;
+	box-shadow: 5px 10px 18px #888888;
+	padding: 10px;
+	margin: 2em auto;
+
+}
+#projects li{
+	list-style-type: none;
+	padding: 10px 5px;
+}
+#part1{
+	padding: 20px;
+}
+
+@media screen and (max-width: 855px) {
+  
+  #projects {
+  	order: 1;
+  }
+  #part1 {
+  	order: 2;
+  }
+}
